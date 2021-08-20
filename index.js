@@ -87,7 +87,7 @@ io.on('connection', (socket) => {
 
 
 
-// Escuchar en el purto 3030
+// Escuchar en el purto 3030 herokuu
 
 const port = process.env.PORT || 3030
 server.listen(port, () => {
