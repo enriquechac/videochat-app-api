@@ -6,9 +6,15 @@ const server = http.createServer(app);
 
 //Inicializacion de SocketIo
 // Ademas abro el cross origin al local host.
+
+// cors: {
+//   origin: "http://localhost:3000",
+//   methods: ["GET", "POST"],
+// }
+
 const io = require("socket.io")(server, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://videochat.enriquechac.me",
       methods: ["GET", "POST"],
     }
   });
